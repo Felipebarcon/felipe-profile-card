@@ -93,6 +93,10 @@ p {
   height: 30rem;
 }
 
+.round:hover {
+  filter: brightness(110%);
+}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -177,4 +181,8 @@ button:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
 }
