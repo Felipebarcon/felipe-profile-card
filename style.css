@@ -44,8 +44,10 @@ body {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  text-transform: uppercase;
   margin: 10px 0;
+  padding-top: 2rem;
 }
 
 h6 {
@@ -97,27 +99,6 @@ p {
   filter: brightness(110%);
 }
 
-button {
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #03bfcb;
-  border-radius: 3px;
-  color: #b3b8cd;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  padding: 1rem 2.5rem;
-}
-
-button:hover {
-  background-color: #03bfcb;
-  border: 1px solid #03bfcb;
-  border-radius: 3px;
-  color: #231e39;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  padding: 1rem 2.5rem;
-}
-
 .skills {
   background-color: #1f1a36;
   padding: 1.5rem;
@@ -151,8 +132,22 @@ button:hover {
   font-style: italic;
 }
 
-.flag {
-  font-size: 3rem;
+.postal {
+  font-size: 1.2rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa-brands {
+  font-size: 2.8rem;
+}
+
+.fa-brands:hover {
+  color: #03bfcb;
+  cursor: pointer;
 }
 
 /* UTILITY */
