@@ -11,13 +11,6 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
 ul {
   list-style: none;
 }
@@ -33,54 +26,113 @@ a {
 
 /* LAYOUT */
 
-.container {
-  max-width: 120rem;
-  display: block;
-  margin: auto;
-  padding: 2rem;
+main {
+  height: 100vh;
 }
 
-.card {
-  width: 80rem;
-  border: solid 1px white;
-}
+body {
+  background-color: #28223f;
+  font-family: Montserrat, sans-serif;
 
-/* BOOTSTRAP CLASSES */
-
-.d-flex {
   display: flex;
-}
-
-.flex-row {
-  flex-direction: row;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-justify-content-center {
-  justify-content: center;
-}
-
-.flex-justify-content-between {
-  justify-content: space-between;
-}
-
-.flex-align-items-center {
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 100vh;
+  margin: 0;
 }
 
-.flex-align-items-between {
-  align-content: space-between;
+h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
 }
 
-.flex-fill {
-  flex: 1 1 auto;
+h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 
-.flex-50 {
-  flex: 1 1 50%;
+p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.card-container {
+  background-color: #231e39;
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 3rem;
+  position: relative;
+  width: 35rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-container .pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.3rem 0.7rem;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+}
+
+.card-container .round {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 0.7rem;
+}
+
+.round {
+  height: 30rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #b3b8cd;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+}
+
+button:hover {
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 3px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+}
+
+.skills {
+  background-color: #1f1a36;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 7px 7px 0;
+  padding: 0.7rem;
+}
+
+.skills ul li:hover {
+  background-color: #03bfcb;
+  color: black;
 }
 
 /* UTILITY */
@@ -117,12 +169,12 @@ a {
   text-align: justify;
 }
 
-/* DEBUG */
-
-.d1 {
-  border: 1px solid red;
-}
-
-.d2 {
-  border: 1px solid green;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
