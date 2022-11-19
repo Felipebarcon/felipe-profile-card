@@ -132,11 +132,27 @@ button:hover {
   font-size: 1.2rem;
   margin: 0 7px 7px 0;
   padding: 0.7rem;
+  cursor: pointer;
 }
 
 .skills ul li:hover {
   background-color: #03bfcb;
   color: black;
+}
+
+.my-title {
+  color: #03bfcb;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.city {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.flag {
+  font-size: 3rem;
 }
 
 /* UTILITY */
